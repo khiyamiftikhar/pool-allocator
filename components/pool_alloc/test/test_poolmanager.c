@@ -45,7 +45,8 @@ static pool_manager_t* manager;
 
 //Setup will run before any test. The state is returned to inital after each test
 //Thus state is not ,maintained, so new object must be created before each test
-void setUp() {
+/*
+static void setUp() {
     ESP_LOGI(tag, "Setting up test environment...");
     size=poolManagerGetObjectSize(3);
     ESP_LOGI(tag,"size %d",size);
@@ -54,7 +55,7 @@ void setUp() {
     int ret=poolManagerCreate(manager,(void*)&array,sizeof(some_struct_t)*3,3);
     ESP_LOGI(tag,"create %d",ret);
 }
-
+*/
 TEST_CASE("PoolManager Create Object","[Unit Test: PoolManager]"){
 
     size=poolManagerGetObjectSize(3);

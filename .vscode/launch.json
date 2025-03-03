@@ -10,24 +10,6 @@
       "type": "espidf",
       "name": "Launch",
       "request": "launch"
-    },
-    {
-    "name": "QEMU Debug",
-            "type": "gdb",
-            "request": "attach",
-            "executable": "${workspaceFolder}/build/unit_test_test.elf",
-            "target": ":1234",
-            "remote": true,
-            "cwd": "${workspaceFolder}",
-            "gdbpath": "${env:IDF_TOOLS_PATH}/tools/xtensa-esp32-elf/bin/xtensa-esp32-elf-gdb",
-            "stopAtEntry": true,
-            "preLaunchTask": "Build"
     }
-
-
-
-
-
-
   ]
 }
