@@ -1,0 +1,3 @@
+dependencies:
+  segger-sysview:
+    path: "../../segger-sysview/components/segger-sysview"
