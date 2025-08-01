@@ -109,6 +109,8 @@ void app_main(void)
     //creating a pool. Declared static so that it remain till life time of program bcz main exits after creating tasks, and it goes out of scope
     static some_struct_t s[]={{1,'a',1.1},{2,'b',2.2},{3,'c',3.3},{4,'d',4.4},{5,'e',5.5},{6,'f',6.6}};
     
+
+    //The total elements in the pool are set using Kconfig
     pool=poolQueueCreate();
 
     //filling it with users
