@@ -210,6 +210,7 @@ pool_alloc_interface_t* poolQueueCreate(){
     self->queue.handle=xQueueCreateStatic(MAX_ELEMENTS,sizeof(void*),self->queue.buff,&self->queue.queue_meta_data);
     
 
+    //Just decrements the count
     if(self->queue.handle==NULL){
         poolReturn();
         return NULL;
